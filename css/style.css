@@ -1,0 +1,757 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  color: #3d3d3d;
+  background-color: #fff;
+}
+
+h1,
+h2 {
+  font-family: "Alfa Slab One", cursive;
+  color: #3d2514;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bebas Neue", cursive;
+  color: #3d2514;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+p,
+a,
+li {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@media (max-width: 769px) {
+  .container {
+    width: 90%;
+  }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+  background: url(../img/header-bg.jpg);
+  padding: 50px 5%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav .topBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header nav .topBar a {
+  line-height: 60px;
+  position: relative;
+  font-size: 2.5rem;
+  padding-left: 80px;
+  font-family: "Bebas Neue", cursive;
+  color: #3d2514;
+}
+
+header nav .topBar a::before {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 60px;
+  left: 0px;
+  background-size: 60px;
+  background-position: center;
+  background-image: url(../img/header-logo.png);
+}
+
+header nav .topBar p {
+  color: #3d2514;
+  position: relative;
+  line-height: 30px;
+  padding-left: 60px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header nav .topBar p::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../img/menu-img.png);
+  height: 30px;
+  width: 40px;
+  left: 0px;
+  background-size: 100%;
+  background-position: center;
+}
+
+header nav ul {
+  text-align: right;
+  margin-top: 30px;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 60px;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+}
+
+header nav ul li a {
+  color: #3d2514;
+  letter-spacing: 3px;
+  font-family: "Bebas Neue", cursive;
+}
+
+header article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+}
+
+header article hgroup {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-top: 100px;
+}
+
+header article hgroup h4 {
+  font-family: "Bebas Neue", cursive;
+  border: 3px dashed #3d2514;
+  padding: 10px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  display: inline-block;
+}
+
+header article hgroup h1 {
+  font-size: 6.3rem;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 0 #fff;
+  line-height: 1;
+  margin: 20px 0;
+}
+
+header article hgroup h2 {
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  line-height: 1;
+  text-shadow: 5px 5px 0 #fff;
+  text-transform: uppercase;
+}
+
+header article > div {
+  position: relative;
+}
+
+header article > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  background-color: #df1b1c;
+  bottom: 200px;
+  left: 200px;
+}
+
+header article > div div::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 2px dashed #fff;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+header article > div div p {
+  color: #fff;
+  font-size: 5rem;
+  font-family: "Bebas Neue", cursive;
+  line-height: 1;
+}
+
+header article > div div p span {
+  font-size: 2rem;
+}
+
+header article > div div p:last-child {
+  letter-spacing: 5px;
+  font-size: 2rem;
+}
+
+.meni {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 60px 7%;
+}
+
+.meni article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.meni article div {
+  width: 100%;
+  position: relative;
+}
+
+.meni article div h3 {
+  position: absolute;
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 1;
+  top: 30px;
+  left: 30px;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+}
+
+.meni article div h3 span {
+  font-size: 3rem;
+}
+
+.meni article img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.izaberi {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+
+.izaberi > h3 {
+  background-color: #ffc136;
+  padding: 10px 20px;
+  font-size: 2rem;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.izaberi h2 {
+  font-size: 3.5rem;
+  margin: 40px 0 30px;
+}
+
+.izaberi p {
+  padding: 0 10%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(61, 37, 20, 0.8);
+}
+
+.izaberi article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 5%;
+  margin-top: 60px;
+}
+
+.izaberi article div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 26%;
+          flex: 0 0 26%;
+}
+
+.izaberi article div img {
+  width: 100%;
+}
+
+.izaberi article div h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.izaberi article div p {
+  font-size: 1.1rem;
+}
+
+.izaberi article div button {
+  background-color: #df1b1c;
+  color: #fff;
+  padding: 20px 50px;
+  margin-top: 40px;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.izaberi article div button:hover {
+  background-color: #3d2514;
+  color: #ffc136;
+}
+
+.events {
+  padding: 50px 5%;
+}
+
+.events h4 {
+  font-size: 2rem;
+  color: #3d3d3d;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.events h2 {
+  font-size: 3rem;
+}
+
+.events article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 30px;
+  -webkit-box-shadow: 20px 20px 20px rgba(61, 61, 61, 0.5);
+          box-shadow: 20px 20px 20px rgba(61, 61, 61, 0.5);
+}
+
+.events article > div:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  padding: 30px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.events article > div:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 52%;
+          flex: 0 0 52%;
+}
+
+.events article > div:last-child img {
+  width: 100%;
+}
+
+.events article .posts {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #3d3d3d;
+  width: 100%;
+  margin-top: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.events article .posts p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.events article .posts p.activePost {
+  left: 0;
+}
+
+.events article .postsNav {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+}
+
+.events article .postsNav li {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: rgba(61, 61, 61, 0.5);
+  cursor: pointer;
+}
+
+.events article .postsNav li.activePoint {
+  background-color: #ffc136;
+}
+
+.kontakt {
+  text-align: center;
+  padding: 70px 20% 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.kontakt h3 {
+  padding: 10px 20px;
+  font-size: 2rem;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.kontakt h2 {
+  font-size: 3.5rem;
+  margin: 40px 0 30px;
+}
+
+.kontakt form {
+  margin-top: 100px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.kontakt form input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #3d3d3d;
+  outline: none;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.3rem;
+}
+
+.kontakt form input:last-child {
+  margin-bottom: 0px;
+}
+
+.kontakt form button {
+  font-family: "Alfa Slab One", cursive;
+  display: block;
+  padding: 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #df1b1c;
+  color: #fff;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.kontakt form button:hover {
+  background-color: #3d2514;
+  color: #ffc136;
+}
+
+.kontakt img {
+  position: absolute;
+}
+
+.kontakt img.topLeft {
+  top: 0;
+  left: 0;
+}
+
+.kontakt img.midleLeft {
+  left: -15%;
+  top: 0;
+}
+
+.kontakt img.bottomRight {
+  bottom: 0;
+  right: -10px;
+}
+
+footer {
+  background: url(../img/footer-bg.jpg);
+  margin: 0 5% 5%;
+  padding: 80px 40px 30px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer a {
+  line-height: 60px;
+  position: relative;
+  font-size: 2.5rem;
+  padding-left: 80px;
+  font-family: "Bebas Neue", cursive;
+  color: #fff;
+  width: 100%;
+}
+
+footer a::before {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 60px;
+  left: 0px;
+  background-size: 60px;
+  background-position: center;
+  background-image: url(../img/footer-logo.png);
+}
+
+footer article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #fff;
+  margin-top: 50px;
+}
+
+footer article.first p {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  text-align: left;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+footer article.first ul {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+footer article.first ul li {
+  line-height: 1.7;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+}
+
+footer article.first ul li i {
+  margin-right: 20px;
+}
+
+footer article.second {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer article.second ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+footer article.second ul li i {
+  background: #fff;
+  color: #3d2514;
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */
